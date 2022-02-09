@@ -6,11 +6,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Staying Alive!</title>
-  <script type="text/javascript">
-    if (screen.width <= 800) {
-    document.location = "mobile.html";
-    }
-    </script>
   <style>
     body {
 	font-family: "Source Sans Pro", sans-serif;
@@ -39,15 +34,26 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+@media (min-width: 800px) {
+.mobile{
+display:none;
+  } 
+ }
+ @media (max-width: 801px) {
+.desktop{
+display:none;
+  } 
+ }
   </style>
 </head>
 <body>
-<kbd>+-------------+-------------+-------+<br></kbd>
+<pre>+-------------+-------------+-------+<br></pre>
 <kbd>| <a href="list.html">Master List</a> | </kbd>
+<kbd>| <a href="index.html">Main Page</a> | </kbd>
 <kbd><a href="leaderboard.html">Leaderboard</a> | </kbd>
 <kbd><a href="misc.html">Misc.</a> | </kbd>
-<kbd><br>+-------------+-------------+-------+</kbd>
-<pre>              __                                         __                                              __                      __  ____  
+<pre><br>+-------------+-------------+-------+</pre>
+<pre class="mobile">              __                                         __                                              __                      __  ____  
              |  \                                       |  \                                            |  \                    |  \/    \ 
  __   __   __| ▓▓____   ______        ______   ______  _| ▓▓_         _______  ______   ______   ______ | ▓▓   __  ______   ____| ▓▓  ▓▓▓▓\
 |  \ |  \ |  \ ▓▓    \ /      \      /      \ /      \|   ▓▓ \       /       \/      \ /      \ /      \| ▓▓  /  \/      \ /      ▓▓\▓▓| ▓▓
