@@ -6,19 +6,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Staying Alive!</title>
+  <script type="text/javascript">
+    if (screen.width <= 800) {
+    document.location = "mobilelist.html";
+    }
+    </script>
   <style>
     body {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: "Consolas", monospace;
 	font-size: 17pt;
 	padding-left: 2%;
-}
-.title {
-	font-family: 'Courier New', Courier, monospace;
-	font-size: 400%;
-	font-weight: bold;
-	margin-bottom: 10px;
-	display: inline-block;
-	padding-right: 4%;
 }
 table {
   font-family: arial, sans-serif;
@@ -47,13 +44,13 @@ display:none;
   </style>
 </head>
 <body>
-<pre>+-------------+-------------+-------+<br></pre>
-<kbd>| <a href="list.html">Master List</a> | </kbd>
+<kbd>+-----------+-------------+-------------+-------+<br></kbd>
 <kbd>| <a href="index.html">Main Page</a> | </kbd>
+<kbd></kbd><a href="list.html">Master List</a> | </kbd>
 <kbd><a href="leaderboard.html">Leaderboard</a> | </kbd>
 <kbd><a href="misc.html">Misc.</a> | </kbd>
-<pre><br>+-------------+-------------+-------+</pre>
-<pre class="mobile">              __                                         __                                              __                      __  ____  
+<kbd><br>+-----------+-------------+-------------+-------+</kbd>
+<pre class="desktop">              __                                         __                                              __                      __  ____  
              |  \                                       |  \                                            |  \                    |  \/    \ 
  __   __   __| ▓▓____   ______        ______   ______  _| ▓▓_         _______  ______   ______   ______ | ▓▓   __  ______   ____| ▓▓  ▓▓▓▓\
 |  \ |  \ |  \ ▓▓    \ /      \      /      \ /      \|   ▓▓ \       /       \/      \ /      \ /      \| ▓▓  /  \/      \ /      ▓▓\▓▓| ▓▓
@@ -65,6 +62,40 @@ display:none;
                                     |  \__| ▓▓                               | ▓▓
                                      \▓▓    ▓▓                               | ▓▓
                                       \▓▓▓▓▓▓                                 \▓▓
+</pre>
+<pre class="mobile">              __                
+             |  \               
+ __   __   __| ▓▓____   ______  
+|  \ |  \ |  \ ▓▓    \ /      \ 
+| ▓▓ | ▓▓ | ▓▓ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓\
+| ▓▓ | ▓▓ | ▓▓ ▓▓  | ▓▓ ▓▓  | ▓▓
+| ▓▓_/ ▓▓_/ ▓▓ ▓▓  | ▓▓ ▓▓__/ ▓▓
+ \▓▓   ▓▓   ▓▓ ▓▓  | ▓▓\▓▓    ▓▓
+  \▓▓▓▓▓\▓▓▓▓ \▓▓   \▓▓ \▓▓▓▓▓▓ </pre>
+<pre class="mobile">                     __     
+                    |  \    
+  ______   ______  _| ▓▓_   
+ /      \ /      \|   ▓▓ \  
+|  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\\▓▓▓▓▓▓  
+| ▓▓  | ▓▓ ▓▓  | ▓▓ | ▓▓ __ 
+| ▓▓__| ▓▓ ▓▓__/ ▓▓ | ▓▓|  \
+ \▓▓    ▓▓\▓▓    ▓▓  \▓▓  ▓▓
+ _\▓▓▓▓▓▓▓ \▓▓▓▓▓▓    \▓▓▓▓ 
+|  \__| ▓▓                  
+ \▓▓    ▓▓               
+  \▓▓▓▓▓▓</pre>
+<pre class="mobile">                                     __                      __  ____
+                                    |  \                    |  \/    \  
+  _______  ______   ______   ______ | ▓▓   __  ______   ____| ▓▓  ▓▓▓▓\
+ /       \/      \ /      \ /      \| ▓▓  /  \/      \ /      ▓▓\▓▓| ▓▓
+|  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\ ▓▓_/  ▓▓  ▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  /  ▓▓
+ \▓▓    \| ▓▓  | ▓▓ ▓▓  | ▓▓ ▓▓   \▓▓ ▓▓   ▓▓| ▓▓    ▓▓ ▓▓  | ▓▓ |  ▓▓ 
+ _\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓__/ ▓▓ ▓▓     | ▓▓▓▓▓▓\| ▓▓▓▓▓▓▓▓ ▓▓__| ▓▓  \▓▓  
+|       ▓▓ ▓▓    ▓▓\▓▓    ▓▓ ▓▓     | ▓▓  \▓▓\\▓▓     \\▓▓    ▓▓ |  \  
+ \▓▓▓▓▓▓▓| ▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓      \▓▓   \▓▓ \▓▓▓▓▓▓▓ \▓▓▓▓▓▓▓  \▓▓  
+         | ▓▓                                                          
+         | ▓▓                                                          
+          \▓▓                                                          
 </pre>
 
 <!--end of copied bit-->
