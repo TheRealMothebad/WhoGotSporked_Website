@@ -1,7 +1,9 @@
 body {
 	font-family: "Consolas", monospace;
-	font-size: 17pt;
-	padding-left: 2%;
+	font-size: 13pt;
+	padding-left: 6%;
+	padding-right: 6%;
+
 }
 table { border-collapse: collapse; }
 td, th {
@@ -13,7 +15,10 @@ tr:nth-child(even) {
 	background-color: #dddddd;
 }
 .banner { display: inline-block; }
-
+div#title {
+	width: 100%;
+	font-size: 80%;
+	text-align: center;
+}
 @media (max-device-width: 1500px) {
-	.banner { display: block; }
 }
