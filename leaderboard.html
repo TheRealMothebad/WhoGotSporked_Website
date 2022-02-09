@@ -1,88 +1,42 @@
-<!--Start of copied bit-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Staying Alive!</title>
-  <style>
-    body {
-	font-family: "Consolas", monospace;
-	font-size: 17pt;
-	padding-left: 2%;
-    }
-  kbd {
-        white-space: pre;
-      }
-table {
-  font-family: "Consolas", monospace;
-  border-collapse: collapse;
-}
-
-td, th {
-  border: 1px solid #202020;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-@media (min-width: 1500px) {
-.mobile{
-display:none;
-  } 
- }
- @media (max-width: 1501px) {
-.desktop{
-display:none;
-  } 
- }
-  </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Staying Alive!</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<kbd>+-----------+-------+-------------+-------------+-------+<br></kbd>
-<kbd>| <a href="index.html">Main Page</a> |</kbd>
-<kbd><a href="rules.html">Rules</a> |</kbd>
-<kbd><a href="list.html">Master List</a> |</kbd>
-<kbd><a href="leaderboard.html">Leaderboard</a> |</kbd>
-<kbd><a href="misc.html">Misc.</a> |</kbd>
-<kbd><br>+-----------+-------+-------------+-------------+-------+</kbd>
-<pre class="desktop">              __                                         __                                              __                      __  ____  
-             |  \                                       |  \                                            |  \                    |  \/    \ 
- __   __   __| ▓▓____   ______        ______   ______  _| ▓▓_         _______  ______   ______   ______ | ▓▓   __  ______   ____| ▓▓  ▓▓▓▓\
-|  \ |  \ |  \ ▓▓    \ /      \      /      \ /      \|   ▓▓ \       /       \/      \ /      \ /      \| ▓▓  /  \/      \ /      ▓▓\▓▓| ▓▓
-| ▓▓ | ▓▓ | ▓▓ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓\    |  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\\▓▓▓▓▓▓      |  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\ ▓▓_/  ▓▓  ▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  /  ▓▓
-| ▓▓ | ▓▓ | ▓▓ ▓▓  | ▓▓ ▓▓  | ▓▓    | ▓▓  | ▓▓ ▓▓  | ▓▓ | ▓▓ __      \▓▓    \| ▓▓  | ▓▓ ▓▓  | ▓▓ ▓▓   \▓▓ ▓▓   ▓▓| ▓▓    ▓▓ ▓▓  | ▓▓ |  ▓▓ 
-| ▓▓_/ ▓▓_/ ▓▓ ▓▓  | ▓▓ ▓▓__/ ▓▓    | ▓▓__| ▓▓ ▓▓__/ ▓▓ | ▓▓|  \     _\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓__/ ▓▓ ▓▓     | ▓▓▓▓▓▓\| ▓▓▓▓▓▓▓▓ ▓▓__| ▓▓  \▓▓  
-\ ▓▓   ▓▓   ▓▓ ▓▓  | ▓▓\▓▓    ▓▓     \▓▓    ▓▓\▓▓    ▓▓  \▓▓  ▓▓    |       ▓▓ ▓▓    ▓▓\▓▓    ▓▓ ▓▓     | ▓▓  \▓▓\\▓▓     \\▓▓    ▓▓ |  \  
-  \▓▓▓▓▓\▓▓▓▓ \▓▓   \▓▓ \▓▓▓▓▓▓      _\▓▓▓▓▓▓▓ \▓▓▓▓▓▓    \▓▓▓▓      \▓▓▓▓▓▓▓| ▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓      \▓▓   \▓▓ \▓▓▓▓▓▓▓ \▓▓▓▓▓▓▓  \▓▓  
-                                    |  \__| ▓▓                               | ▓▓
-                                     \▓▓    ▓▓                               | ▓▓
-                                      \▓▓▓▓▓▓                                 \▓▓</pre>
-<pre class="mobile">              __                
-             |  \               
- __   __   __| ▓▓____   ______  
-|  \ |  \ |  \ ▓▓    \ /      \ 
-| ▓▓ | ▓▓ | ▓▓ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓\
-| ▓▓ | ▓▓ | ▓▓ ▓▓  | ▓▓ ▓▓  | ▓▓
-| ▓▓_/ ▓▓_/ ▓▓ ▓▓  | ▓▓ ▓▓__/ ▓▓
- \▓▓   ▓▓   ▓▓ ▓▓  | ▓▓\▓▓    ▓▓
-  \▓▓▓▓▓\▓▓▓▓ \▓▓   \▓▓ \▓▓▓▓▓▓ </pre>
-<pre class="mobile">                     __     
-                    |  \    
-  ______   ______  _| ▓▓_   
- /      \ /      \|   ▓▓ \  
-|  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\\▓▓▓▓▓▓  
-| ▓▓  | ▓▓ ▓▓  | ▓▓ | ▓▓ __ 
-| ▓▓__| ▓▓ ▓▓__/ ▓▓ | ▓▓|  \
- \▓▓    ▓▓\▓▓    ▓▓  \▓▓  ▓▓
- _\▓▓▓▓▓▓▓ \▓▓▓▓▓▓    \▓▓▓▓ 
-|  \__| ▓▓                  
- \▓▓    ▓▓               
-  \▓▓▓▓▓▓</pre>
-<pre class="mobile">                                     __                      __  ____
+<pre>+-----------+-------+-------------+-------------+-------+
+| <a href="index.html">Main Page</a> | <a href="rules.html">Rules</a> | <a href="list.html">Master List</a> | <a href="leaderboard.html">Leaderboard</a> | <a href="misc.html">Misc.</a> |
++-----------+-------+-------------+-------------+-------+</pre>
+<pre class="banner">              __                    
+             |  \                   
+ __   __   __| ▓▓____   ______      
+|  \ |  \ |  \ ▓▓    \ /      \     
+| ▓▓ | ▓▓ | ▓▓ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓\    
+| ▓▓ | ▓▓ | ▓▓ ▓▓  | ▓▓ ▓▓  | ▓▓    
+| ▓▓_/ ▓▓_/ ▓▓ ▓▓  | ▓▓ ▓▓__/ ▓▓    
+ \▓▓   ▓▓   ▓▓ ▓▓  | ▓▓\▓▓    ▓▓    
+  \▓▓▓▓▓\▓▓▓▓ \▓▓   \▓▓ \▓▓▓▓▓▓     
+
+
+
+</pre>
+<pre class="banner">                     __         
+                    |  \        
+  ______   ______  _| ▓▓_       
+ /      \ /      \|   ▓▓ \      
+|  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\\▓▓▓▓▓▓      
+| ▓▓  | ▓▓ ▓▓  | ▓▓ | ▓▓ __     
+| ▓▓__| ▓▓ ▓▓__/ ▓▓ | ▓▓|  \    
+ \▓▓    ▓▓\▓▓    ▓▓  \▓▓  ▓▓    
+ _\▓▓▓▓▓▓▓ \▓▓▓▓▓▓    \▓▓▓▓     
+|  \__| ▓▓                      
+ \▓▓    ▓▓                      
+  \▓▓▓▓▓▓                       
+</pre>
+<pre class="banner">                                     __                      __  ____
                                     |  \                    |  \/    \  
   _______  ______   ______   ______ | ▓▓   __  ______   ____| ▓▓  ▓▓▓▓\
  /       \/      \ /      \ /      \| ▓▓  /  \/      \ /      ▓▓\▓▓| ▓▓
@@ -93,8 +47,11 @@ display:none;
  \▓▓▓▓▓▓▓| ▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓      \▓▓   \▓▓ \▓▓▓▓▓▓▓ \▓▓▓▓▓▓▓  \▓▓  
          | ▓▓                                                          
          | ▓▓                                                          
-          \▓▓</pre>
+	  \▓▓</pre><br>
 
-<!--end of copied bit-->
+
+
+
+<!-- CONTENT BEGIN -->
 
 <kbd>wip</kbd>
