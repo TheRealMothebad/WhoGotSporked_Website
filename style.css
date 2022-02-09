@@ -1,0 +1,19 @@
+body {
+	font-family: "Consolas", monospace;
+	font-size: 17pt;
+	padding-left: 2%;
+}
+table { border-collapse: collapse; }
+td, th {
+	border: 1px solid #202020;
+	text-align: left;
+	padding: 8px;
+}
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+.banner { display: inline-block; }
+
+@media (max-device-width: 1500px) {
+	.banner { display: block; }
+}
