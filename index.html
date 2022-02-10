@@ -1,101 +1,487 @@
-<!--Start of copied bit-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Staying Alive!</title>
-  <style>
-    body {
-	font-family: "Consolas", monospace;
-	font-size: 17pt;
-	padding-left: 2%;
-    }
-  kbd {
-        white-space: pre;
-      }
-table {
-  font-family: "Consolas", monospace;
-  border-collapse: collapse;
-}
-
-td, th {
-  border: 1px solid #202020;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-@media (min-width: 1500px) {
-.mobile{
-display:none;
-  } 
- }
- @media (max-width: 1501px) {
-.desktop{
-display:none;
-  } 
- }
-  </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>who got sporked?</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<kbd>+-----------+-------+-------------+-------------+-------+<br></kbd>
-<kbd>| <a href="index.html">Main Page</a> |</kbd>
-<kbd><a href="rules.html">Rules</a> |</kbd>
-<kbd><a href="list.html">Master List</a> |</kbd>
-<kbd><a href="leaderboard.html">Leaderboard</a> |</kbd>
-<kbd><a href="misc.html">Misc.</a> |</kbd>
-<kbd><br>+-----------+-------+-------------+-------------+-------+</kbd>
-<pre class="desktop">              __                                         __                                              __                      __  ____  
-             |  \                                       |  \                                            |  \                    |  \/    \ 
- __   __   __| ▓▓____   ______        ______   ______  _| ▓▓_         _______  ______   ______   ______ | ▓▓   __  ______   ____| ▓▓  ▓▓▓▓\
-|  \ |  \ |  \ ▓▓    \ /      \      /      \ /      \|   ▓▓ \       /       \/      \ /      \ /      \| ▓▓  /  \/      \ /      ▓▓\▓▓| ▓▓
-| ▓▓ | ▓▓ | ▓▓ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓\    |  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\\▓▓▓▓▓▓      |  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\ ▓▓_/  ▓▓  ▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  /  ▓▓
-| ▓▓ | ▓▓ | ▓▓ ▓▓  | ▓▓ ▓▓  | ▓▓    | ▓▓  | ▓▓ ▓▓  | ▓▓ | ▓▓ __      \▓▓    \| ▓▓  | ▓▓ ▓▓  | ▓▓ ▓▓   \▓▓ ▓▓   ▓▓| ▓▓    ▓▓ ▓▓  | ▓▓ |  ▓▓ 
-| ▓▓_/ ▓▓_/ ▓▓ ▓▓  | ▓▓ ▓▓__/ ▓▓    | ▓▓__| ▓▓ ▓▓__/ ▓▓ | ▓▓|  \     _\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓__/ ▓▓ ▓▓     | ▓▓▓▓▓▓\| ▓▓▓▓▓▓▓▓ ▓▓__| ▓▓  \▓▓  
-\ ▓▓   ▓▓   ▓▓ ▓▓  | ▓▓\▓▓    ▓▓     \▓▓    ▓▓\▓▓    ▓▓  \▓▓  ▓▓    |       ▓▓ ▓▓    ▓▓\▓▓    ▓▓ ▓▓     | ▓▓  \▓▓\\▓▓     \\▓▓    ▓▓ |  \  
-  \▓▓▓▓▓\▓▓▓▓ \▓▓   \▓▓ \▓▓▓▓▓▓      _\▓▓▓▓▓▓▓ \▓▓▓▓▓▓    \▓▓▓▓      \▓▓▓▓▓▓▓| ▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓      \▓▓   \▓▓ \▓▓▓▓▓▓▓ \▓▓▓▓▓▓▓  \▓▓  
-                                    |  \__| ▓▓                               | ▓▓
-                                     \▓▓    ▓▓                               | ▓▓
-                                      \▓▓▓▓▓▓                                 \▓▓</pre>
-<pre class="mobile">              __                
-             |  \               
- __   __   __| ▓▓____   ______  
-|  \ |  \ |  \ ▓▓    \ /      \ 
-| ▓▓ | ▓▓ | ▓▓ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓\
-| ▓▓ | ▓▓ | ▓▓ ▓▓  | ▓▓ ▓▓  | ▓▓
-| ▓▓_/ ▓▓_/ ▓▓ ▓▓  | ▓▓ ▓▓__/ ▓▓
- \▓▓   ▓▓   ▓▓ ▓▓  | ▓▓\▓▓    ▓▓
-  \▓▓▓▓▓\▓▓▓▓ \▓▓   \▓▓ \▓▓▓▓▓▓ </pre>
-<pre class="mobile">                     __     
-                    |  \    
-  ______   ______  _| ▓▓_   
- /      \ /      \|   ▓▓ \  
-|  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\\▓▓▓▓▓▓  
-| ▓▓  | ▓▓ ▓▓  | ▓▓ | ▓▓ __ 
-| ▓▓__| ▓▓ ▓▓__/ ▓▓ | ▓▓|  \
- \▓▓    ▓▓\▓▓    ▓▓  \▓▓  ▓▓
- _\▓▓▓▓▓▓▓ \▓▓▓▓▓▓    \▓▓▓▓ 
-|  \__| ▓▓                  
- \▓▓    ▓▓               
-  \▓▓▓▓▓▓</pre>
-<pre class="mobile">                                     __                      __  ____
+	<center>
+		<pre>+-------------+-------+<!-- ------------+ -->
+| <b>Master List</b> | <a href="rules.html">Rules</a> |<!--<a href="leaderboard.html">Leaderboard</a> |-->
++-------------+-------+<!-- ------------+ --></pre></center>
+<div id="title">
+<span id="small"><pre class="banner">              __                    
+             |  \                   
+ __   __   __| ▓▓____   ______      
+|  \ |  \ |  \ ▓▓    \ /      \     
+| ▓▓ | ▓▓ | ▓▓ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓\    
+| ▓▓ | ▓▓ | ▓▓ ▓▓  | ▓▓ ▓▓  | ▓▓    
+| ▓▓_/ ▓▓_/ ▓▓ ▓▓  | ▓▓ ▓▓__/ ▓▓    
+ \▓▓   ▓▓   ▓▓ ▓▓  | ▓▓\▓▓    ▓▓    
+  \▓▓▓▓▓\▓▓▓▓ \▓▓   \▓▓ \▓▓▓▓▓▓     
+
+
+
+</pre>
+<pre class="banner">                     __         
+                    |  \        
+  ______   ______  _| ▓▓_       
+ /      \ /      \|   ▓▓ \      
+|  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\\▓▓▓▓▓▓      
+| ▓▓  | ▓▓ ▓▓  | ▓▓ | ▓▓ __     
+| ▓▓__| ▓▓ ▓▓__/ ▓▓ | ▓▓|  \    
+ \▓▓    ▓▓\▓▓    ▓▓  \▓▓  ▓▓    
+ _\▓▓▓▓▓▓▓ \▓▓▓▓▓▓    \▓▓▓▓     
+|  \__| ▓▓                      
+ \▓▓    ▓▓                      
+  \▓▓▓▓▓▓                       
+</pre></span></div>
+<div id="title">
+<pre class="banner">                                  __                      __  ____
                                     |  \                    |  \/    \  
-  _______  ______   ______   ______ | ▓▓   __  ______   ____| ▓▓  ▓▓▓▓\
- /       \/      \ /      \ /      \| ▓▓  /  \/      \ /      ▓▓\▓▓| ▓▓
-|  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\ ▓▓_/  ▓▓  ▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  /  ▓▓
- \▓▓    \| ▓▓  | ▓▓ ▓▓  | ▓▓ ▓▓   \▓▓ ▓▓   ▓▓| ▓▓    ▓▓ ▓▓  | ▓▓ |  ▓▓ 
- _\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓__/ ▓▓ ▓▓     | ▓▓▓▓▓▓\| ▓▓▓▓▓▓▓▓ ▓▓__| ▓▓  \▓▓  
-|       ▓▓ ▓▓    ▓▓\▓▓    ▓▓ ▓▓     | ▓▓  \▓▓\\▓▓     \\▓▓    ▓▓ |  \  
- \▓▓▓▓▓▓▓| ▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓      \▓▓   \▓▓ \▓▓▓▓▓▓▓ \▓▓▓▓▓▓▓  \▓▓  
-         | ▓▓                                                          
-         | ▓▓                                                          
-          \▓▓</pre>
+  _______  ______   ______   ______ | ▓▓   __  ______   ____| ▓▓  ▓▓▓▓\ 
+ /       \/      \ /      \ /      \| ▓▓  /  \/      \ /      ▓▓\▓▓| ▓▓ 
+|  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\ ▓▓_/  ▓▓  ▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  /  ▓▓ 
+ \▓▓    \| ▓▓  | ▓▓ ▓▓  | ▓▓ ▓▓   \▓▓ ▓▓   ▓▓| ▓▓    ▓▓ ▓▓  | ▓▓ |  ▓▓  
+ _\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓__/ ▓▓ ▓▓     | ▓▓▓▓▓▓\| ▓▓▓▓▓▓▓▓ ▓▓__| ▓▓  \▓▓   
+|       ▓▓ ▓▓    ▓▓\▓▓    ▓▓ ▓▓     | ▓▓  \▓▓\\▓▓     \\▓▓    ▓▓ |  \   
+ \▓▓▓▓▓▓▓| ▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓      \▓▓   \▓▓ \▓▓▓▓▓▓▓ \▓▓▓▓▓▓▓  \▓▓   
+         | ▓▓                                                           
+         | ▓▓                                                           
+	  \▓▓                                                           </pre>
+</div><br><br>
 
-<!--end of copied bit-->
 
-<kbd>Be the last one standing!<br></kbd>
-<kbd>This page is a resource to track the game, and other stuff</kbd>
+
+
+<!-- CONTENT BEGIN -->
+
+<p>Be the last one standing!</p>
+<p>This page is a resource to track the game, and other stuff</p>
+<br>
+
+<table>
+	<tr>
+		<th scope="col">Dead
+		<th scope="col">Contestant
+		<th scope="col">Sporked by
+	</tr>
+	<tr>
+		<!-- dead -->		<td>
+		<!-- contestant -->	<td>Levi
+		<!-- sporked by -->	<td>
+	</tr>
+	<tr>
+		<td>
+		<td>Josie
+		<td>
+	</tr>
+	<tr>
+		<td>
+		<td>Felicity
+		<td>
+	</tr>
+	<!-- at some point we can format this i'm gonna be lazy for now -->
+<tr>
+<td>
+<td>Shannon
+<td>
+</tr>
+<tr>
+<td>☠
+<td>Mia W.
+<td>Eva
+</tr>
+<tr>
+<td>☠
+<td>Regan
+<td>Esther
+</tr>
+        <tr>
+        <td>
+        <td>Ariana
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Eva
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Leah
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Jasmine
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Estella
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Madison
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Mia G.
+        <td>
+        </tr>
+        <tr>
+        <td>☠
+        <td>John U.
+        <td>Ryan
+        </tr>
+        <tr>
+        <td>
+        <td>Henry H.
+        <td>
+        </tr>
+        <tr>
+        <td>☠
+        <td>Tyler
+        <td>Ryan
+        </tr>
+        <tr>
+        <td>
+        <td>Levi
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>John R
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Alex
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Xander 
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>TJ 
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Mattan 
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Ava
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Mark
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Eliot
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Ian
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Harrison
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Sylva
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Jada
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Sophia
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Lior
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Chrissy
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Lydie
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Margot
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Julia
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Katie
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Talia
+        <td>
+        </tr>
+        <tr>
+        <td>☠
+        <td>Jocelyn
+        <td>Misha
+        </tr>
+        <tr>
+        <td>
+        <td>Maggie
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Riley
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>David
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Roberta
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Hollis
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Natalie
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Kaes 
+        <td>
+        </tr>
+        <tr>
+        <td>☠
+        <td>Alex M
+        <td>Madison
+        </tr>
+        <tr>
+        <td>☠
+        <td>Jordan
+        <td>Natalie
+        </tr>
+        <tr>
+        <td>☠
+        <td>Oliver
+        <td>Jada
+        </tr>
+        <tr>
+        <td>☠
+        <td>Sebastian O.
+        <td>Felicity
+        </tr>
+        <tr>
+        <td>
+        <td>Avani
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Tobin 
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Walden
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Henry M.
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Elijah
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Jack
+        <td>
+        </tr>
+        <tr>
+        <td>☠
+        <td>Alex C.
+        <td>Paloma
+        </tr>
+        <tr>
+        <td>
+        <td>Grace
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Labron 
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Sadie 
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Meghan
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Wade
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Mira
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Caroline 
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Coco
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Misha
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Calvin
+        <td>
+        </tr>
+        <tr>
+        <td>☠
+        <td>Nadia
+        <td>Levi
+        </tr>
+        <tr>
+        <td>
+        <td>Ryan The Exterminator
+        <td>
+        </tr>
+        <tr>
+        <td>☠
+        <td>Joe
+        <td>Ryan
+        </tr>
+        <tr>
+        <td>
+        <td>Leo
+        <td>
+        </tr>
+        <tr>
+        <td>☠
+        <td>Karina
+        <td>Shannon
+        </tr>
+        <tr>
+        <td>
+        <td>Esther
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Lily
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Eliot
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Chloe
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Paloma 
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Melina
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Lucy
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Carrie
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Gaby
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Kate 
+        <td>
+        </tr>
+        <tr>
+        <td>
+        <td>Leda 
+        <td>
+        </tr>
+</table>
+
+<br>
+<p>Questions? Comments? Concerns? Send them to 304530@aaps.k12.mi.us</p>
+
+<br>
