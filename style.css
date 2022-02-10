@@ -5,6 +5,17 @@ body {
 	padding-right: 6%;
 
 }
+div#title {
+	width: 100%;
+	text-align: center;
+}
+#small { font-size: 73%; }
+/*marquee {
+	padding: 8px;
+	color: #fca503;
+	font-family: "Press Start 2P";
+	font-size: 13px;
+}*/
 table {
 	border-collapse: collapse;
 	width: auto;
@@ -16,11 +27,6 @@ td, th {
 }
 tr:nth-child(even) { background-color: #dddddd; }
 .banner { display: inline-block; }
-div#title {
-	width: 100%;
-	text-align: center;
-}
-#small { font-size: 73%; }
 ol { margin-left: 80px; }
 p.credit {
 	color: #454545;
