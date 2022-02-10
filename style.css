@@ -1,6 +1,6 @@
 body {
 	font-family: "Consolas", monospace;
-	font-size: 13pt;
+	font-size: 15pt;
 	padding-left: 6%;
 	padding-right: 6%;
 
@@ -20,13 +20,13 @@ tr:nth-child(even) {
 .banner { display: inline-block; }
 div#title {
 	width: 100%;
-	font-size: 120%;
 	text-align: center;
 }
 #small {
 	font-size: 73%;
 }
 @media only screen and (max-device-width: 700px) {
+	body { font-size: 13pt; }
 	div#title { font-size: 43%; }
 	table { width: 100% }
 }
