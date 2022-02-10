@@ -5,6 +5,17 @@ body {
 	padding-right: 6%;
 
 }
+div#title {
+	width: 100%;
+	text-align: center;
+}
+#small { font-size: 73%; }
+/*marquee {
+	padding: 8px;
+	color: #fca503;
+	font-family: "Press Start 2P";
+	font-size: 13px;
+}*/
 table {
 	border-collapse: collapse;
 	width: auto;
@@ -14,19 +25,21 @@ td, th {
 	text-align: left;
 	padding: 8px;
 }
-tr:nth-child(even) {
-	background-color: #dddddd;
-}
+tr:nth-child(even) { background-color: #dddddd; }
 .banner { display: inline-block; }
-div#title {
-	width: 100%;
-	text-align: center;
+ol { margin-left: 80px; }
+p.credit {
+	color: #454545;
+	font-style: italic;
+	font-size: 80%;
 }
-#small {
-	font-size: 73%;
-}
+
+
+
+
 @media only screen and (max-device-width: 700px) {
 	body { font-size: 13pt; }
 	div#title { font-size: 43%; }
 	table { width: 100% }
+	ol { margin-left: 20px; }
 }
