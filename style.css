@@ -20,7 +20,9 @@ pre {
 	margin: none;
 	padding: none;
 }
-div.navbutton { display: inline-block; }
+div.navbutton {
+	display: inline-block;
+}
 table {
 	border-collapse: collapse;
 	width: auto;
