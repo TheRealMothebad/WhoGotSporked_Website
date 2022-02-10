@@ -20,13 +20,13 @@ tr:nth-child(even) {
 .banner { display: inline-block; }
 div#title {
 	width: 100%;
-	font-size: 15pt;
+	font-size: 120%;
 	text-align: center;
 }
 #small {
 	font-size: 73%;
 }
 @media only screen and (max-device-width: 700px) {
-	div#title { font-size: 7pt; }
+	div#title { font-size: 43%; }
 	table { width: 100% }
 }
