@@ -25,6 +25,15 @@ div#title {
 #small {
 	font-size: 73%;
 }
+p.credit {
+	color: #454545;
+	font-style: italic;
+	font-size: 80%;
+}
+
+
+
+
 @media only screen and (max-device-width: 700px) {
 	body { font-size: 13pt; }
 	div#title { font-size: 43%; }
