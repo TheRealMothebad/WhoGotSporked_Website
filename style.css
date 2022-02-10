@@ -16,6 +16,13 @@ div#title {
 	font-family: "Press Start 2P";
 	font-size: 13px;
 }*/
+pre {
+	margin: none;
+	padding: none;
+}
+div.navbutton {
+	display: inline-block;
+}
 table {
 	border-collapse: collapse;
 	width: auto;
