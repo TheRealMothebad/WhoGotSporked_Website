@@ -20,9 +20,7 @@ pre {
 	margin: none;
 	padding: none;
 }
-div.navbutton {
-	display: inline-block;
-}
+div.navbutton { display: inline-block; }
 table {
 	border-collapse: collapse;
 	width: auto;
@@ -49,4 +47,5 @@ p.credit {
 	div#title { font-size: 50%; }
 	table { width: 100% }
 	ol { margin-left: 20px; }
+	div.navbutton { font-size: 120%; }
 }
