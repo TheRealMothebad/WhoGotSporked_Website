@@ -20,9 +20,7 @@ pre {
 	margin: none;
 	padding: none;
 }
-div.navbutton {
-	display: inline-block;
-}
+div.navbutton { display: inline-block; }
 table {
 	border-collapse: collapse;
 	width: auto;
@@ -45,9 +43,8 @@ p.credit {
 
 
 @media only screen and (max-device-width: 700px) {
-	body { font-size: 13pt; }
-	div#title { font-size: 43%; }
+	body { font-size: 12pt; }
+	div#title { font-size: 50%; }
 	table { width: 100% }
 	ol { margin-left: 20px; }
-	.nav { font-size: 80%; }
 }
