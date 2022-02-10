@@ -5,7 +5,10 @@ body {
 	padding-right: 6%;
 
 }
-table { border-collapse: collapse; }
+table {
+	border-collapse: collapse;
+	width: auto;
+}
 td, th {
 	border: 1px solid #202020;
 	text-align: left;
@@ -25,4 +28,5 @@ div#title {
 }
 @media only screen and (max-device-width: 700px) {
 	div#title { font-size: 7pt; }
+	table { width: 100% }
 }
