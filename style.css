@@ -43,10 +43,13 @@ p.credit {
     margin-right: auto;
 	text-align: center;
 }
-.fix {
+.fixtable {
 	display: table; 
     margin: 0 auto;
     text-align: left;
+}
+.stats {
+	width: 30%;
 }
 
 
