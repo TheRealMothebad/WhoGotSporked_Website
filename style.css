@@ -38,6 +38,16 @@ p.credit {
 	font-style: italic;
 	font-size: 80%;
 }
+.center {
+    margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+}
+.fix {
+	display: table; 
+    margin: 0 auto;
+    text-align: left;
+}
 
 
 
