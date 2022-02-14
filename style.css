@@ -51,6 +51,9 @@ p.credit {
 .stats {
 	width: 30%;
 }
+div.float {
+	float: right;
+}
 
 
 @media only screen and (max-device-width: 700px) {
