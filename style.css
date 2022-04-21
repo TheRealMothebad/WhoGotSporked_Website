@@ -10,6 +10,12 @@ div#title {
 	text-align: center;
 }
 #small { font-size: 73%; }
+div#tiny-title {
+	width: 100%;
+	padding-top: 20px;
+	font-size: 40%;
+	text-align: center;
+}
 /*marquee {
 	padding: 8px;
 	color: #fca503;
