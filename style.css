@@ -63,6 +63,9 @@ div.float {
 	text-align: center;
 	margin-right: 4%;
 }
+/*tr.winner {
+	background-color: #a4cdfe;
+}*/
 
 
 @media only screen and (max-device-width: 700px) {
